@@ -1,0 +1,29 @@
+$primary-color: #323;
+
+body {
+  background-color: $primary-color;
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  background-color: coral; 
+}
+
+
+@keyframes tutsFade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#t {
+  -webkit-animation: tutsFade 4s 1s infinite linear alternate;
+  -moz-animation: tutsFade 4s 1s infinite linear alternate;
+  -ms-animation: tutsFade 4s 1s infinite linear alternate;
+  -o-animation: tutsFade 4s 1s infinite linear alternate;
+  animation: tutsFade 4s 1s infinite linear alternate;
+}

@@ -1,0 +1,46 @@
+{
+  "name": "animation-example",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "webpack-dev-server --config config/webpack.dev.js --inline --progress --port 3002",
+    "build": "webpack --config config/webpack.prod.js --progress --profile --bail",
+    "single": "babel-node --presets es2015,stage-2 %JS%",
+    "singlesh": "babel-node --presets es2015,stage-2 $JS"
+  },
+  "dependencies": {
+    "babel-polyfill": "6.26.0",
+    "cross-env": "5.1.1",
+    "jquery": "^3.2.1",
+    "sleep-promise": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "6.26.0",
+    "babel-loader": "7.1.2",
+    "babel-preset-env": "1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "6.24.1",
+    "compression": "1.7.1",
+    "copy-webpack-plugin": "4.3.0",
+    "css-loader": "0.28.7",
+    "empty-module": "0.0.2",
+    "extract-text-webpack-plugin": "3.0.2",
+    "file-loader": "1.1.6",
+    "html-webpack-plugin": "2.30.1",
+    "imports-loader": "0.7.1",
+    "node-sass": "4.7.2",
+    "path": "0.12.7",
+    "prop-types": "15.6.0",
+    "raw-loader": "0.5.1",
+    "react-hot-loader": "3.1.3",
+    "rimraf": "2.6.2",
+    "rtlcss": "2.2.1",
+    "sass-loader": "6.0.6",
+    "string-replace-webpack-plugin": "0.1.3",
+    "style-loader": "0.19.1",
+    "url-loader": "0.6.2",
+    "webpack": "3.10.0",
+    "webpack-dev-server": "2.9.7",
+    "webpack-merge": "4.1.1"
+  }
+}
